@@ -1,0 +1,116 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;;
+}
+
+body{
+  font-family: sans-serif;
+}
+
+.contact-container{
+  height: 450px;
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+.contact-center{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+.contact-title h2{
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(130deg, magenta, rgb(17, 55, 137));
+  font-size: 35px;
+  margin-bottom: 5px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.contact-title hr{
+  border: none;
+  width: 120px;
+  height: 1px;
+  background-color: rgb(0, 128, 255);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.inputbox{
+  width: 400px;
+  height: 100px;
+  border-style: ridge;
+  border-width: 1px;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 500;
+  color: rgb(52, 52, 52);
+  border-radius: 20px;
+
+}
+
+.contact-center textarea{
+  height: 140px;
+  padding-top: 15px;
+  border-radius: 20px;
+}
+.inputbox:focus{
+  border: 2px solid rgb(0, 0, 0);  
+}
+.inputbox::placeholder{
+  color:rgb(0, 153, 255);
+}
+.contact-center button{
+  display:flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 16px;
+  color:rgb(255, 255, 255);
+  gap: 10px;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(270deg, rgb(172, 69, 246), rgb(142, 153, 255));
+  cursor: pointer;
+}
+
+.markiza {
+  width: 400px;
+  height: 400px;
+}
+
+@media only screen and (max-width:600px) {
+    .contact-container {
+      height: auto;
+      width: auto;
+      overflow-y: auto;
+      margin: 0;
+      padding: 0;
+    }
+
+    .contact-title h2{
+      font-size: 25px;
+    }
+    .inputbox {
+      width: 40svh;
+      height: 5svh;
+    }
+    .contactbox-right {
+      display: none;
+    }
+
+    .contact-center textarea {
+      height: 20svh;
+    }
+
+    .contact-center button {
+      height: 5svh;
+      text-align: center;
+    }
+    .markiza {
+      display: none;
+    }
+}

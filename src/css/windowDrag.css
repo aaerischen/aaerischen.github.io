@@ -1,0 +1,66 @@
+.draggable-window {
+    display: none;
+    height: auto;
+    border: 1px solid #0078d7;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    z-index: auto;
+    resize: both;
+    touch-action: none;
+  }
+  
+.window-title-bar {
+    height: 30px;
+    background: linear-gradient(#007AFF, #001eff);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    cursor: move;
+    user-select: none; /* Prevent text selection */
+  }
+
+.title {
+  font-weight: bold;
+} 
+
+.window-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.window-controls button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content:end;
+}
+
+.window-content {
+  padding: 16px;
+  background-color: white;
+  overflow: hidden;
+  }
+
+@media only screen and (max-width: 600px) {
+
+  .draggable-window {
+    display:flex;
+    overflow: auto;
+    height: 80svh;
+    width: 75svw;
+  }
+
+}

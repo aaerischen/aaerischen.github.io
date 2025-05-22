@@ -1,0 +1,134 @@
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.wrapper {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: block;
+  background-attachment: fixed;
+  background: linear-gradient(#007AFF, #001eff);
+  padding: 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.icon_tool {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.toolbar {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  background-color: #ffffff;
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px;
+  z-index: 9999;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.toolbar.open {
+  display: block;
+}
+
+.toolbar-item {
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+}
+
+.toolbar-item:hover {
+  background-color: #e0e0e0;
+}
+
+.toolbar-item a {
+  color: #333;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0 5px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  height: 30px;
+  line-height: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+  background: linear-gradient(#007AFF, #001eff);
+  background-attachment: fixed;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Windows 95-style improvements */
+.wrapper {
+  font-family: 'MS Sans Serif', Arial, sans-serif;
+}
+
+.toolbar {
+  border: 2px solid;
+  border-color: #ffffff #808080 #808080 #ffffff;
+}
+
+.toolbar-item {
+  border: 1px solid transparent;
+}
+
+.toolbar-item:hover {
+  border: 1px solid #000080;
+  background-color: #000080;
+  color: white;
+}
+
+.toolbar-item:hover a {
+  color: white;
+}
+
+.trivia span{
+  font-size: 15px;
+}
+
+.trivia img{
+  width: 20px;
+  height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    padding: 0;
+    margin: 0;
+    height: 4svh;
+  }
+  .btn {
+    padding:0;
+    display:flex;
+    height: 4svh;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #ffffff;
+    background: linear-gradient(#007AFF, #001eff);
+    background-attachment: fixed;
+  }
+}

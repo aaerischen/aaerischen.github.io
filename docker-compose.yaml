@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  mysite:
+    build: ./build
+    container_name: build_c
+    ports:
+      - '3000:3000'
+    stdin_open: true
+    tty: true
