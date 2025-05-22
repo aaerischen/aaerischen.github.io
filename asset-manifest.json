@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ad335328.css",
+    "main.js": "/static/js/main.3c47c75e.js",
+    "static/media/cv_bazarova.pdf": "/static/media/cv_bazarova.8568cf5556413672f12c.pdf",
+    "static/media/me.jpg": "/static/media/me.18b9d73d726d3ea6a819.jpg",
+    "static/media/markiza.jpg": "/static/media/markiza.197e4c192b4ca4c72517.jpg",
+    "static/media/Untitled2.png": "/static/media/Untitled2.d17caa95ef6f102d54fc.png",
+    "static/media/reacticon.gif": "/static/media/reacticon.7949532db65da5e57be0.gif",
+    "index.html": "/index.html",
+    "main.ad335328.css.map": "/static/css/main.ad335328.css.map",
+    "main.3c47c75e.js.map": "/static/js/main.3c47c75e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ad335328.css",
+    "static/js/main.3c47c75e.js"
+  ]
+}
